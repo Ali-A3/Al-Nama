@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Al Nama Agricultural - Growing the Earth, Enriching Life. Comprehensive agricultural solutions including fertilizers, irrigation, crop protection, and consultancy.">
+    <meta name="keywords" content="agriculture, fertilizers, irrigation, crop protection, Oman, Al Nama">
+    <title>Al Nama Agricultural | Growing the Earth, Enriching Life</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- ========== NAVIGATION ========== -->
+    <header class="nav-header" id="nav-header">
+        <nav class="nav-container" aria-label="Main navigation">
+            <a href="#hero" class="nav-logo" aria-label="Al Nama Agricultural - Home">
+                <svg class="nav-logo-icon" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path d="M20 4C20 4 8 10 8 22C8 28.627 13.373 34 20 34C26.627 34 32 28.627 32 22C32 10 20 4 20 4Z" fill="#1a6b37"/>
+                    <path d="M20 8C20 8 12 13 12 22C12 26.418 15.582 30 20 30C24.418 30 28 26.418 28 22C28 13 20 8 20 8Z" fill="#4aad6a"/>
+                    <path d="M20 14V28" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                    <path d="M20 18C17 16 14.5 17 14 19" stroke="white" stroke-width="1.2" stroke-linecap="round" fill="none"/>
+                    <path d="M20 22C23 20 25.5 21 26 23" stroke="white" stroke-width="1.2" stroke-linecap="round" fill="none"/>
+                </svg>
+                <div class="nav-logo-text">
+                    <span class="nav-logo-name">Al Nama Agricultural</span>
+                    <span class="nav-logo-arabic">&#x627;&#x644;&#x646;&#x645;&#x627;&#x621; &#x627;&#x644;&#x632;&#x631;&#x627;&#x639;&#x64A;&#x629;</span>
+                </div>
+            </a>
+
+            <button class="nav-hamburger" id="nav-hamburger" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-menu">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+
+            <ul class="nav-menu" id="nav-menu" role="menubar">
+                <li role="none"><a href="#hero" class="nav-link active" role="menuitem">Home</a></li>
+                <li role="none"><a href="#solutions" class="nav-link" role="menuitem">Solutions</a></li>
+                <li role="none"><a href="#why" class="nav-link" role="menuitem">Why Choose Us</a></li>
+                <li role="none"><a href="#about" class="nav-link" role="menuitem">About</a></li>
+                <li role="none"><a href="#gallery" class="nav-link" role="menuitem">Gallery</a></li>
+                <li role="none"><a href="#contact" class="nav-link nav-link-cta" role="menuitem">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- ========== HERO SECTION ========== -->
+        <section class="hero" id="hero">
+            <div class="hero-bg" aria-hidden="true">
+                <div class="hero-gradient"></div>
+                <div class="hero-pattern"></div>
+            </div>
+
+            <div class="hero-container">
+                <div class="hero-content">
+                    <p class="hero-tagline">Al Nama Agricultural</p>
+                    <h1 class="hero-title">Growing Better.<br>Farming Smarter.</h1>
+                    <p class="hero-description">
+                        Delivering comprehensive agricultural solutions — from premium fertilizers and modern irrigation systems to crop protection and professional consultancy. Empowering farmers across Oman for a more productive future.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#contact" class="btn btn-primary">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+                            </svg>
+                            Get an Agricultural Consultation
+                        </a>
+                        <a href="#solutions" class="btn btn-secondary">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <circle cx="12" cy="12" r="10"/>
+                                <polyline points="12 16 16 12 12 8"/>
+                                <line x1="8" y1="12" x2="16" y2="12"/>
+                            </svg>
+                            Explore Our Solutions
+                        </a>
+                    </div>
+                </div>
+
+                <div class="hero-form-wrapper">
+                    <div class="hero-form-card" id="contact">
+                        <div class="form-header">
+                            <h2 class="form-title">Get an Agricultural Consultation</h2>
+                            <p class="form-subtitle">Tell us about your needs and we'll connect with you shortly.</p>
+                        </div>
+
+                        <form class="consultation-form" id="consultationForm" novalidate>
+                            <fieldset>
+                                <legend class="sr-only">Consultation Request Form</legend>
+
+                                <div class="form-group">
+                                    <label for="form-name" class="form-label">
+                                        Full Name <span class="required" aria-label="required">*</span>
+                                    </label>
+                                    <input type="text" id="form-name" name="name" class="form-input" required autocomplete="name" placeholder="Enter your full name">
+                                    <span class="form-error" id="form-name-error" role="alert"></span>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="form-phone" class="form-label">
+                                        Phone / WhatsApp <span class="required" aria-label="required">*</span>
+                                    </label>
+                                    <input type="tel" id="form-phone" name="phone" class="form-input" required autocomplete="tel" placeholder="e.g. 91234567">
+                                    <span class="form-error" id="form-phone-error" role="alert"></span>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="form-email" class="form-label">
+                                        Email <span class="optional">(optional)</span>
+                                    </label>
+                                    <input type="email" id="form-email" name="email" class="form-input" autocomplete="email" placeholder="you@example.com">
+                                    <span class="form-error" id="form-email-error" role="alert"></span>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="form-location" class="form-label">
+                                        Location <span class="optional">(optional)</span>
+                                    </label>
+                                    <input type="text" id="form-location" name="location" class="form-input" placeholder="e.g. Sohar, Barka">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="form-service" class="form-label">
+                                        Service Needed <span class="required" aria-label="required">*</span>
+                                    </label>
+                                    <select id="form-service" name="service" class="form-input form-select" required>
+                                        <option value="" disabled selected>Select a service</option>
+                                        <option value="fertilizers">Fertilizers &amp; Nutrients</option>
+                                        <option value="irrigation">Irrigation Systems</option>
+                                        <option value="crop-protection">Crop Protection</option>
+                                        <option value="consultancy">Agricultural Consultancy</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                    <span class="form-error" id="form-service-error" role="alert"></span>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="form-message" class="form-label">
+                                        Requirements / Message <span class="optional">(optional)</span>
+                                    </label>
+                                    <textarea id="form-message" name="message" class="form-input form-textarea" rows="4" placeholder="Tell us about your requirements..."></textarea>
+                                </div>
+
+                                <button type="submit" class="btn btn-primary btn-full">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <line x1="22" y1="2" x2="11" y2="13"/>
+                                        <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+                                    </svg>
+                                    Request Consultation
+                                </button>
+                            </fieldset>
+                        </form>
+
+                        <div class="form-success" id="formSuccess" hidden>
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#1a6b37" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                                <polyline points="22 4 12 14.01 9 11.01"/>
+                            </svg>
+                            <h3>Thank You!</h3>
+                            <p>Your consultation request has been submitted. Our team will contact you shortly.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-wave" aria-hidden="true">
+                <svg viewBox="0 0 1440 120" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0,60 C360,120 720,0 1080,60 C1260,90 1380,80 1440,70 L1440,120 L0,120 Z" fill="#ffffff"/>
+                </svg>
+            </div>
+        </section>
+
+        <!-- ========== TRUST / CREDIBILITY STRIP ========== -->
+        <section class="trust-strip" aria-label="Why trust Al Nama Agricultural">
+            <div class="trust-container">
+                <div class="trust-item">
+                    <div class="trust-icon" aria-hidden="true">
+                        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#1a6b37" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                            <path d="M2 17l10 5 10-5"/>
+                            <path d="M2 12l10 5 10-5"/>
+                        </svg>
+                    </div>
+                    <div class="trust-text">
+                        <strong>Complete Agricultural Solutions</strong>
+                        <span>From soil to harvest</span>
+                    </div>
+                </div>
+
+                <div class="trust-item">
+                    <div class="trust-icon" aria-hidden="true">
+                        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#1a6b37" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                            <polyline points="22 4 12 14.01 9 11.01"/>
+                        </svg>
+                    </div>
+                    <div class="trust-text">
+                        <strong>Quality-Focused Products</strong>
+                        <span>Tested and proven</span>
+                    </div>
+                </div>
+
+                <div class="trust-item">
+                    <div class="trust-icon" aria-hidden="true">
+                        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#1a6b37" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                            <circle cx="9" cy="7" r="4"/>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                        </svg>
+                    </div>
+                    <div class="trust-text">
+                        <strong>Practical Agricultural Expertise</strong>
+                        <span>Experienced professionals</span>
+                    </div>
+                </div>
+
+                <div class="trust-item">
+                    <div class="trust-icon" aria-hidden="true">
+                        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#1a6b37" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+                        </svg>
+                    </div>
+                    <div class="trust-text">
+                        <strong>Reliable Customer Support</strong>
+                        <span>Always here for you</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== OUR AGRICULTURAL SOLUTIONS ========== -->
+        <section class="solutions" id="solutions" aria-labelledby="solutions-heading">
+            <div class="section-container">
+                <div class="section-header">
+                    <p class="section-tag">What We Offer</p>
+                    <h2 class="section-title" id="solutions-heading">Our Agricultural Solutions</h2>
+                    <p class="section-description">
+                        Comprehensive products and services designed to support every stage of agricultural production.
+                    </p>
+                </div>
+
+                <div class="solutions-grid">
+                    <article class="solution-card">
+                        <div class="solution-icon" aria-hidden="true">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#1a6b37" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                                <path d="M9 12l2 2 4-4"/>
+                            </svg>
+                        </div>
+                        <h3 class="solution-title">Fertilizers &amp; Nutrients</h3>
+                        <p class="solution-description">High-quality fertilizers and plant nutrition solutions formulated to maximize crop yield and soil health.</p>
+                        <a href="#contact" class="solution-link">
+                            Learn More
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <line x1="5" y1="12" x2="19" y2="12"/>
+                                <polyline points="12 5 19 12 12 19"/>
+                            </svg>
+                        </a>
+                    </article>
+
+                    <article class="solution-card">
+                        <div class="solution-icon" aria-hidden="true">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#1a6b37" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 2v6"/>
+                                <path d="M8 6h8"/>
+                                <circle cx="12" cy="14" r="4"/>
+                                <path d="M12 18v4"/>
+                                <path d="M8 22h8"/>
+                                <path d="M2 14c0-2 2-4 4-4"/>
+                                <path d="M22 14c0-2-2-4-4-4"/>
+                            </svg>
+                        </div>
+                        <h3 class="solution-title">Modern Irrigation Systems</h3>
+                        <p class="solution-description">Efficient irrigation solutions designed to support better water management and sustainable farming practices.</p>
+                        <a href="#contact" class="solution-link">
+                            Learn More
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <line x1="5" y1="12" x2="19" y2="12"/>
+                                <polyline points="12 5 19 12 12 19"/>
+                            </svg>
+                        </a>
+                    </article>
+
+                    <article class="solution-card">
+                        <div class="solution-icon" aria-hidden="true">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#1a6b37" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/>
+                                <path d="M12 6v6l4 2"/>
+                                <path d="M8 2l2 4"/>
+                                <path d="M16 2l-2 4"/>
+                            </svg>
+                        </div>
+                        <h3 class="solution-title">Crop Protection</h3>
+                        <p class="solution-description">Crop protection and pest-management solutions to safeguard your harvest and ensure healthy growth.</p>
+                        <a href="#contact" class="solution-link">
+                            Learn More
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <line x1="5" y1="12" x2="19" y2="12"/>
+                                <polyline points="12 5 19 12 12 19"/>
+                            </svg>
+                        </a>
+                    </article>
+
+                    <article class="solution-card">
+                        <div class="solution-icon" aria-hidden="true">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#1a6b37" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/>
+                                <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
+                            </svg>
+                        </div>
+                        <h3 class="solution-title">Agricultural Consultancy</h3>
+                        <p class="solution-description">Professional agricultural guidance and consultation tailored to your specific farming needs and goals.</p>
+                        <a href="#contact" class="solution-link">
+                            Learn More
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <line x1="5" y1="12" x2="19" y2="12"/>
+                                <polyline points="12 5 19 12 12 19"/>
+                            </svg>
+                        </a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== WHY CHOOSE AL NAMA ========== -->
+        <section class="why" id="why" aria-labelledby="why-heading">
+            <div class="section-container">
+                <div class="section-header">
+                    <p class="section-tag">Our Strengths</p>
+                    <h2 class="section-title" id="why-heading">Why Choose Al Nama</h2>
+                    <p class="section-description">
+                        We combine quality products with deep agricultural knowledge to help you achieve better results.
+                    </p>
+                </div>
+
+                <div class="why-grid">
+                    <div class="why-item">
+                        <div class="why-icon" aria-hidden="true">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#1a6b37" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                                <polyline points="22 4 12 14.01 9 11.01"/>
+                            </svg>
+                        </div>
+                        <h3 class="why-title">Quality-Focused Solutions</h3>
+                        <p class="why-text">Every product we offer is carefully selected and tested to meet the highest standards of quality and effectiveness.</p>
+                    </div>
+
+                    <div class="why-item">
+                        <div class="why-icon" aria-hidden="true">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#1a6b37" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                                <circle cx="9" cy="7" r="4"/>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                            </svg>
+                        </div>
+                        <h3 class="why-title">Practical Agricultural Expertise</h3>
+                        <p class="why-text">Our team brings years of hands-on agricultural experience to provide practical, real-world solutions.</p>
+                    </div>
+
+                    <div class="why-item">
+                        <div class="why-icon" aria-hidden="true">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#1a6b37" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                                <path d="M2 17l10 5 10-5"/>
+                                <path d="M2 12l10 5 10-5"/>
+                            </svg>
+                        </div>
+                        <h3 class="why-title">Complete Solutions for Farming</h3>
+                        <p class="why-text">From nutrients to irrigation to crop protection, we offer everything you need under one roof.</p>
+                    </div>
+
+                    <div class="why-item">
+                        <div class="why-icon" aria-hidden="true">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#1a6b37" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                            </svg>
+                        </div>
+                        <h3 class="why-title">Sustainable Growth Approach</h3>
+                        <p class="why-text">We promote farming practices that support long-term soil health and environmental responsibility.</p>
+                    </div>
+
+                    <div class="why-item">
+                        <div class="why-icon" aria-hidden="true">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#1a6b37" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                            </svg>
+                        </div>
+                        <h3 class="why-title">Customer-Focused Service</h3>
+                        <p class="why-text">Your success is our priority. We listen, understand, and tailor our approach to your unique requirements.</p>
+                    </div>
+
+                    <div class="why-item">
+                        <div class="why-icon" aria-hidden="true">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#1a6b37" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="1" y="4" width="22" height="16" rx="2" ry="2"/>
+                                <line x1="1" y1="10" x2="23" y2="10"/>
+                            </svg>
+                        </div>
+                        <h3 class="why-title">Reliable Ongoing Support</h3>
+                        <p class="why-text">Our relationship doesn't end at the sale. We provide continued support and guidance whenever you need it.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== ABOUT / OUR APPROACH ========== -->
+        <section class="about" id="about" aria-labelledby="about-heading">
+            <div class="section-container">
+                <div class="about-grid">
+                    <div class="about-content">
+                        <p class="section-tag">About Us</p>
+                        <h2 class="about-title" id="about-heading">Growing the Earth.<br>Enriching Life.</h2>
+                        <p class="about-text">
+                            At Al Nama Agricultural, we are committed to supporting farmers and agricultural professionals with access to quality products, modern solutions, and expert guidance. Our approach combines proven agricultural knowledge with innovative practices to help you achieve better results season after season.
+                        </p>
+                        <p class="about-text">
+                            Whether you're looking for the right fertilizer, a more efficient irrigation system, or professional advice on crop protection, our team is here to help you make informed decisions that benefit your farm and your future.
+                        </p>
+                        <div class="about-brand-message">
+                            <div class="about-brand-line" aria-hidden="true"></div>
+                            <p class="about-brand-text">Quality Today .. A Better Tomorrow</p>
+                        </div>
+                    </div>
+
+                    <div class="about-image">
+                        <div class="about-image-placeholder" aria-label="Al Nama Agricultural team at work">
+                            <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="#2d8f4e" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/>
+                                <path d="M8 14s1.5 2 4 2 4-2 4-2"/>
+                                <line x1="9" y1="9" x2="9.01" y2="9"/>
+                                <line x1="15" y1="9" x2="15.01" y2="9"/>
+                            </svg>
+                            <span>Agricultural Excellence in Action</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== GALLERY / AGRICULTURAL SHOWCASE ========== -->
+        <section class="gallery" id="gallery" aria-labelledby="gallery-heading">
+            <div class="section-container">
+                <div class="section-header">
+                    <p class="section-tag">Our Work</p>
+                    <h2 class="section-title" id="gallery-heading">Agricultural Showcase</h2>
+                    <p class="section-description">
+                        A glimpse into the agricultural solutions and environments we support.
+                    </p>
+                </div>
+
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <div class="gallery-placeholder" aria-label="Greenhouse farming">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M3 21h18"/>
+                                <path d="M5 21V7l7-4 7 4v14"/>
+                                <path d="M9 21v-4h6v4"/>
+                                <path d="M9 10h.01"/>
+                                <path d="M15 10h.01"/>
+                            </svg>
+                            <span class="gallery-label">Greenhouse</span>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item">
+                        <div class="gallery-placeholder" aria-label="Modern irrigation systems">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M12 2v6"/>
+                                <path d="M8 6h8"/>
+                                <circle cx="12" cy="14" r="4"/>
+                                <path d="M12 18v4"/>
+                                <path d="M8 22h8"/>
+                            </svg>
+                            <span class="gallery-label">Irrigation</span>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item">
+                        <div class="gallery-placeholder" aria-label="Healthy crops in the field">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M7 20h10"/>
+                                <path d="M10 20c0-4.4 3.6-8 8-8h4c0-4.4-3.6-8-8-8-4.4 0-8 3.6-8 8"/>
+                            </svg>
+                            <span class="gallery-label">Healthy Crops</span>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item">
+                        <div class="gallery-placeholder" aria-label="Modern farming techniques">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/>
+                                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+                            </svg>
+                            <span class="gallery-label">Modern Farming</span>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item">
+                        <div class="gallery-placeholder" aria-label="Agricultural products and supplies">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                                <polyline points="3.27 6.96 12 12.01 20.73 6.96"/>
+                                <line x1="12" y1="22.08" x2="12" y2="12"/>
+                            </svg>
+                            <span class="gallery-label">Agricultural Products</span>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item">
+                        <div class="gallery-placeholder" aria-label="Plant growth and development">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M12 22V8"/>
+                                <path d="M5 12H2a10 10 0 0 0 10-10"/>
+                                <path d="M22 12h-3a10 10 0 0 1-10 10"/>
+                                <path d="M5 12c0 4 3 7 7 7"/>
+                                <path d="M19 12c0 4-3 7-7 7"/>
+                            </svg>
+                            <span class="gallery-label">Plant Growth</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== CUSTOMER TESTIMONIALS ========== -->
+        <section class="testimonials" aria-labelledby="testimonials-heading">
+            <div class="section-container">
+                <div class="section-header">
+                    <p class="section-tag">Testimonials</p>
+                    <h2 class="section-title" id="testimonials-heading">What Our Customers Say</h2>
+                </div>
+
+                <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars" aria-label="Rating placeholder">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="#f5a623" stroke="none" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="#f5a623" stroke="none" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="#f5a623" stroke="none" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="#f5a623" stroke="none" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="#f5a623" stroke="none" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        </div>
+                        <div class="testimonial-placeholder-content">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#ccc" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+                            </svg>
+                            <p class="testimonial-coming-soon">Testimonial Coming Soon</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="testimonial-avatar" aria-hidden="true"></div>
+                            <div>
+                                <p class="testimonial-name">Customer Name</p>
+                                <p class="testimonial-role">Location</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars" aria-label="Rating placeholder">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="#f5a623" stroke="none" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="#f5a623" stroke="none" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="#f5a623" stroke="none" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="#f5a623" stroke="none" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="#f5a623" stroke="none" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        </div>
+                        <div class="testimonial-placeholder-content">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#ccc" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+                            </svg>
+                            <p class="testimonial-coming-soon">Testimonial Coming Soon</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="testimonial-avatar" aria-hidden="true"></div>
+                            <div>
+                                <p class="testimonial-name">Customer Name</p>
+                                <p class="testimonial-role">Location</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars" aria-label="Rating placeholder">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="#f5a623" stroke="none" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="#f5a623" stroke="none" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="#f5a623" stroke="none" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="#f5a623" stroke="none" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="#f5a623" stroke="none" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        </div>
+                        <div class="testimonial-placeholder-content">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#ccc" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+                            </svg>
+                            <p class="testimonial-coming-soon">Testimonial Coming Soon</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="testimonial-avatar" aria-hidden="true"></div>
+                            <div>
+                                <p class="testimonial-name">Customer Name</p>
+                                <p class="testimonial-role">Location</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== FINAL CALL TO ACTION ========== -->
+        <section class="cta" aria-labelledby="cta-heading">
+            <div class="cta-bg" aria-hidden="true">
+                <div class="cta-gradient"></div>
+                <div class="cta-shape cta-shape-1">
+                    <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                        <path fill="#ffffff10" d="M44.7,-76.4C58.8,-69.2,71.8,-59.1,79.6,-45.8C87.4,-32.5,90,-16.3,88.4,-0.9C86.8,14.4,81,28.9,72.4,41.2C63.8,53.5,52.4,63.7,39.4,70.1C26.4,76.5,11.8,79.1,-2.6,83.2C-17,87.3,-34,92.9,-47.4,86.8C-60.8,80.7,-70.6,62.9,-76.8,44.6C-83,26.3,-85.6,7.5,-83.1,-10.6C-80.6,-28.7,-73,-46.1,-61.1,-57.8C-49.2,-69.5,-33,-75.5,-17.3,-79.4C-1.6,-83.3,13.6,-85.1,27.6,-82.6C41.6,-80.1,54.4,-73.3,44.7,-76.4Z" transform="translate(100 100)"/>
+                    </svg>
+                </div>
+                <div class="cta-shape cta-shape-2">
+                    <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                        <path fill="#ffffff08" d="M39.5,-67.5C52.9,-60.4,66.7,-53.1,74.8,-41.5C82.9,-29.9,85.3,-14.9,84.3,-0.6C83.3,13.7,78.9,27.3,71.3,39.2C63.7,51.1,52.9,61.3,40.2,67.5C27.5,73.7,12.8,75.9,-1.2,78.2C-15.2,80.5,-29.5,82.9,-42.2,78.1C-54.9,73.3,-66,61.3,-72.3,47.4C-78.6,33.5,-80.1,17.8,-79.8,2.2C-79.5,-13.3,-77.4,-28.7,-70.1,-41.1C-62.8,-53.5,-50.3,-62.9,-37.3,-70.3C-24.3,-77.7,-10.8,-83.1,2.1,-86.7C15,-90.3,26.1,-74.6,39.5,-67.5Z" transform="translate(100 100)"/>
+                    </svg>
+                </div>
+            </div>
+
+            <div class="cta-container">
+                <h2 class="cta-title" id="cta-heading">Let's Grow Something Better.</h2>
+                <p class="cta-text">
+                    Ready to improve your agricultural outcomes? Contact us today for a personalized consultation and discover how Al Nama Agricultural can support your farming goals.
+                </p>
+                <div class="cta-actions">
+                    <a href="#contact" class="btn btn-primary btn-light">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+                        </svg>
+                        Get an Agricultural Consultation
+                    </a>
+                    <a href="#contact" class="btn btn-secondary btn-light">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+                        </svg>
+                        Contact Us
+                    </a>
+                </div>
+                <div class="cta-contacts">
+                    <div class="cta-contact-item">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                            <circle cx="12" cy="10" r="3"/>
+                        </svg>
+                        <span><strong>Sohar:</strong> 79618800</span>
+                    </div>
+                    <div class="cta-contact-item">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                            <circle cx="12" cy="10" r="3"/>
+                        </svg>
+                        <span><strong>Barka:</strong> 79211525</span>
+                    </div>
+                    <div class="cta-contact-item">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                            <circle cx="12" cy="10" r="3"/>
+                        </svg>
+                        <span><strong>Al Suwaiq:</strong> 78418800</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="#hero" class="footer-logo" aria-label="Al Nama Agricultural - Home">
+                        <svg class="footer-logo-icon" width="36" height="36" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <path d="M20 4C20 4 8 10 8 22C8 28.627 13.373 34 20 34C26.627 34 32 28.627 32 22C32 10 20 4 20 4Z" fill="#4aad6a"/>
+                            <path d="M20 8C20 8 12 13 12 22C12 26.418 15.582 30 20 30C24.418 30 28 26.418 28 22C28 13 20 8 20 8Z" fill="#2d8f4e"/>
+                            <path d="M20 14V28" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                            <path d="M20 18C17 16 14.5 17 14 19" stroke="white" stroke-width="1.2" stroke-linecap="round" fill="none"/>
+                            <path d="M20 22C23 20 25.5 21 26 23" stroke="white" stroke-width="1.2" stroke-linecap="round" fill="none"/>
+                        </svg>
+                        <div class="footer-logo-text">
+                            <span class="footer-logo-name">Al Nama Agricultural</span>
+                            <span class="footer-tagline">Growing the Earth, Enriching Life</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="footer-links">
+                    <h3 class="footer-heading">Quick Links</h3>
+                    <ul class="footer-nav">
+                        <li><a href="#hero">Home</a></li>
+                        <li><a href="#solutions">Solutions</a></li>
+                        <li><a href="#why">Why Choose Us</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-contact">
+                    <h3 class="footer-heading">Contact Us</h3>
+                    <div class="footer-contact-list">
+                        <div class="footer-contact-item">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+                            </svg>
+                            <div>
+                                <p>Sohar: 79618800</p>
+                                <p>Barka: 79211525</p>
+                                <p>Al Suwaiq: 78418800</p>
+                            </div>
+                        </div>
+                        <div class="footer-contact-item">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                <polyline points="22,6 12,13 2,6"/>
+                            </svg>
+                            <a href="mailto:info@alnamaagri.com">info@alnamaagri.com</a>
+                        </div>
+                        <div class="footer-contact-item">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <circle cx="12" cy="12" r="10"/>
+                                <line x1="2" y1="12" x2="22" y2="12"/>
+                                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                            </svg>
+                            <a href="http://www.alnamaagri.com" target="_blank" rel="noopener noreferrer">www.alnamaagri.com</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Al Nama Agricultural. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
